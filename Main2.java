@@ -55,53 +55,54 @@ public class Main2 {
                     "//6. Выход");
             input = scn.nextInt();
             if(input == 1){
+                System.out.print("Вывести все счета");
                 for (int i = 0; i < BankArray.length; i++) {
                     BankArray[i].printInfo();
                 }
             }
             else if(input == 2){
-                System.out.print("Вывести сумму на счете по номеру ");
-                String city = scn.next();
+                System.out.print("Введите номер счёта для получения баланса");
+                int input1 = scn.nextInt();
                 for (int i = 0; i < BankArray.length; i++) {
-                    if(BankArray[i].city.equals(city)) {
+                    if(BankArray[i].) {
                         BankArray[i].printInfo();
-                        //System.out.println(arr[i].name + " " + arr[i].lastname + " " + arr[i].seria + " " + arr[i].number + " " + arr[i].city);
+
                     }
                 }
             }
             else if(input == 3){
-                System.out.print("Enter lastname: ");
-                String lastname = scn.next();
+                System.out.print("Введите счёт отправителя, счёт получателя и сумму перевода");
+                int input2 = scn.nextInt();
+                int input3 = scn.nextInt();
+                int input4 = scn.nextInt();
                 for (int i = 0; i < BankArray.length; i++) {
-                    if(BankArray[i].lastname.equals(lastname)) {
+                    if(BankArray[i].) {
                         BankArray[i].printInfo();
-                        //System.out.println(arr[i].name + " " + arr[i].lastname + " " + arr[i].seria + " " + arr[i].number + " " + arr[i].city);
+
                     }
                 }
             }
             else if(input == 4){
-                System.out.print("Enter lastname: ");
-                String lastname = scn.next();
+                System.out.print("Вывести счёт с самым большим процентом на остаток");
                 for (int i = 0; i < BankArray.length; i++) {
-                    if(BankArray[i].lastname.equals(lastname)) {
+                    if(BankArray[i].) {
                         BankArray[i].printInfo();
-                        //System.out.println(arr[i].name + " " + arr[i].lastname + " " + arr[i].seria + " " + arr[i].number + " " + arr[i].city);
+
                     }
                 }
             }
-            else if(input == 5){
-                System.out.print("Enter lastname: ");
-                String lastname = scn.next();
+            else if(input == 4){
+                System.out.print("Найти счёт, владелец которого получает больше всех годовых");
                 for (int i = 0; i < BankArray.length; i++) {
-                    if(BankArray[i].lastname.equals(lastname)) {
+                    if(BankArray[i].) {
                         BankArray[i].printInfo();
-                        //System.out.println(arr[i].name + " " + arr[i].lastname + " " + arr[i].seria + " " + arr[i].number + " " + arr[i].city);
+
                     }
                 }
             }
             else if(input == 6){
-                System.out.print("Enter lastname: ");
-                String lastname = scn.next();
+                System.out.print("Выход");
+                String exit = scn.next();
 
                     }
                 }

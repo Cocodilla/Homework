@@ -29,6 +29,7 @@ public class Main {
     public static void main(String[] args) {
 
         Character[] arr = new Character[5];
+
         Random rnd = new Random();
         String[] names = {"Punisher", "Storm", "Winner", "Lucia", "MagicalWand"};
         String[] characterClass = {"Warrior", "Mage", "Healer"};
@@ -57,14 +58,14 @@ public class Main {
         System.out.println("Введите урон персонажа");
         int input2 = scn.nextInt();
         for (int i = 0; i < arr.length ; i++) {
-            if (arr[i]<=input2)) {
+            if (arr[i].damage == input2 && arr[i].damage < input2 ) {
                 arr[i].printInfo();
             }
             System.out.println("Введите класс и урон персонажа");
             String input3 = scn.next();
             int input4 = scn.nextInt();
-            for (int i = 0; i < arr.length ; i++) {
-                if (arr[i].name.equals(input)) {
+            for (i = 0; i < arr.length ; i++) {
+                if (arr[i].characterClass.equals(input3) && arr[i].damage == input4) {
                     arr[i].printInfo();
                 }
 

@@ -20,6 +20,7 @@ class Cat {
     String food;
 
     public void printInfo() {
+
         System.out.println(name + " " + age + " " + food + "");
     }
 
@@ -31,15 +32,18 @@ class Cat {
     public Cat(String name, String food, int age) {
             this(name, food);
             this.age = age;
+        printInfo();
 
         }
     public Cat(String name) {
             this.name = name;
+        printInfo();
 
         }
     public Cat(String name, int age) {
         this.name = name;
         this.age = age;
+        printInfo();
     }
     }
 

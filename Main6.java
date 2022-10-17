@@ -8,9 +8,9 @@ public class Main6 {
         public void main(String[] args) {
 
             lesson1.Rectangle rec1 = new lesson1.Rectangle(76, 74);
-            lesson1.Rectangle rec2 = new lesson1.Rectangle(76, 74, "red");
-            lesson1.Rectangle rec3 = new lesson1.Rectangle("Рыжик", "молоко");
-            lesson1.Rectangle rec4 = new lesson1.Rectangle("Тузик", "мясо");
+            lesson1.Rectangle rec2 = new lesson1.Rectangle(57,67, "гладкая");
+            lesson1.Rectangle rec3 = new lesson1.Rectangle(88, 89,"чёрный","шероховатая");
+            lesson1.Rectangle rec4 = new lesson1.Rectangle("белый",64 ,86);
         }
 
     }
@@ -21,6 +21,7 @@ public class Main6 {
         String surface;
 
         public void printInfo() {
+
             System.out.println(a + " " + b + " " + color + "" + surface + "");
         }
 
@@ -28,20 +29,23 @@ public class Main6 {
             this.b =b;
             this.a = a;
         }
-        public Rectangle(int a, int b, String color) {
+        public Rectangle( String color, int a, int b) {
             this(a, b);
             this.color = color;
+            printInfo();
 
         }
         public Rectangle(int a, int b, String surface) {
             this(a, b);
             this.surface=surface;
+            printInfo();
 
         }
 
         public Rectangle(int a, int b, String color, String surface) {
             this(a, b, color);
             this.surface= surface;
+            printInfo();
 
         }
 
