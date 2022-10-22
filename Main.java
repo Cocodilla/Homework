@@ -58,7 +58,7 @@ public class Main {
         System.out.println("Введите урон персонажа");
         int input2 = scn.nextInt();
         for (int i = 0; i < arr.length ; i++) {
-            if (arr[i].damage == input2 && arr[i].damage < input2 ) {
+            if (arr[i].damage >= input2 ) {
                 arr[i].printInfo();
             }
             System.out.println("Введите класс и урон персонажа");

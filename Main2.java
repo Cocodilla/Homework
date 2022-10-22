@@ -40,6 +40,7 @@ public class Main2 {
             BankAccount b = new BankAccount();
             b.yearlyPercent = rnd.nextInt(8) + 1;
             b.balance = rnd.nextInt(5000)+500;
+            b.accountNumber= i+10;
             BankArray[i]=b;
         }
 
@@ -64,9 +65,8 @@ public class Main2 {
                 System.out.print("Введите номер счёта для получения баланса");
                 int input1 = scn.nextInt();
                 for (int i = 0; i < BankArray.length; i++) {
-                    if(BankArray[i].) {
-                        BankArray[i].printInfo();
-
+                    if(BankArray[i].accountNumber == input1) {
+                        System.out.println(BankArray[i].balance);
                     }
                 }
             }
